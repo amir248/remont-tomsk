@@ -1,0 +1,57 @@
+.priceListWorks{
+  overflow: hidden;
+  /* overflow-x: hidden; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height:170px;
+  /* margin:3%; */
+  overflow: hidden;
+  /* width:calc(100% - 7%); */
+  /* width:100%; */
+}
+.priceListWorks::after{
+  content:"";
+  display:block;
+  position: absolute;
+  height:150px;
+  width:calc(100% - 7px);
+  background: rgba(33,33,33,0.7);
+  z-index: -3;
+}.priceListWorks::before{
+  content:"";
+  display:block;
+  position: absolute;
+  height:150px;
+  width:calc(100% - 7px);
+  transform: rotate(3deg);
+  background: rgba(33,33,33,0.3);
+  z-index: -1;
+}
+
+.priceListWorks > a > h2{
+  color:#e3e365;
+  text-align: center;
+  margin: 1%;
+  text-shadow: 1px 1px black;
+  width:100%;
+  /* max-width: 170px; */
+}
+.priceListWorks > a{
+  text-decoration: none;
+}
+.priceListWorks > a > button{
+  /* width:232px; */
+  height:60px;
+  background: #0693e3;
+  color:white;
+  border-radius:17px;
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+  min-width: calc(270px + 7px);
+}
+.priceListWorks > a > button:hover{
+  color:#767676;
+}

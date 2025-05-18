@@ -1,0 +1,65 @@
+<style media="screen">
+*{
+  margin:0;
+  padding:0;
+}
+.freeMeasurement{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+  max-width:1300px;
+  flex-wrap:wrap;
+  background:url('https://remont-tomsk.ru/site/includeHTML/freeMeasurement/ingenerTake.webp');
+  background-size:cover;
+  background-position:center center;
+  border-radius:17px;
+  flex-direction:row;
+}
+.freeMeasurement > div{
+  display:flex;
+  font-size:22px;
+  align-items:space-around;
+  justify-content:space-around;
+  min-height:170px;
+  flex-direction:column;
+}
+.freeMeasurement > img{
+  width:100%;
+  max-width:370px;
+}
+body > main > section:nth-child(7) > div > picture > img{
+  width:100%;
+  max-width:370px;
+}
+.freeMeasurement > div > a > button{
+  width:270px;
+  height:50px;
+  font-size:30px;
+  /* color:darkblue; */
+  color:black;
+  background:#e6e63c;
+  border-radius:17px;
+  border: solid black 1px;
+  transition: all 0.1s ease-out;
+}
+.freeMeasurement > div > a > button:hover{
+  border:solid yellow 2px;
+  background:black;
+  color:#e6e63c;
+  border: 3px solid #e6e63c;
+  transition: all 0.1s ease-out;
+}
+</style>
+<div class="freeMeasurement">
+  <div>
+    <h3>Бесплатный замер</h3>
+    <a href="https://wa.me/79528808007">
+      <button type="button" name="button">Заказать</button>
+    </a>
+  </div>
+  <picture>
+    <source srcset="https://remont-tomsk.ru/site/includeHTML/freeMeasurement/zamerRevers700.webp" media="(max-width: 3500px)" />
+    <img src="https://remont-tomsk.ru/site/includeHTML/freeMeasurement/zamerRevers.png" alt="Заказать бесплатный замер, ремонт под ключ">
+  </picture>
+</div>

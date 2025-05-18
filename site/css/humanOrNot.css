@@ -1,0 +1,52 @@
+.range_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background-color: fffbfb;
+    border-radius: 40px;
+}
+
+.range {
+    width: 259px;
+    height: 35px;
+    appearance: none;
+    background: white;
+    outline: none;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width:50px;
+    height: 35px;
+    background: #5CA6FC;
+    border-radius: 35px;
+    border: 1px solid #fffbfb;
+    box-shadow: -407px 0 0 400px #FFFBFB;
+    cursor: mouse;
+}
+
+.rangeValue {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25em;
+    color: #fff;
+    background: #022f52;
+    margin-left: 15px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+.calcOrder > importantForm{
+  width: 330px;
+  height: 358px;
+  background: rgba(33,33,33,0.4);
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,26 @@
+.aboutUs{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutUs > div{
+  width:100%;
+  max-width:700px;
+}
+.aboutUs > div >p{
+  margin:3%;
+}
+.aboutUs > picture > img{
+  width:100%;
+  max-width: 450px;
+  border-radius:7px;
+}
+.aboutUs > div > ul > li{
+  margin-left:75px;
+}
+@media(max-width:700px){
+  .aboutUs > picture{
+    display:none;
+  }
+}

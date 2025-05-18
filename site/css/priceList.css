@@ -1,0 +1,91 @@
+.priceList{
+  overflow: hidden;
+  /* overflow-x: hidden; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height:170px;
+  margin:3%;
+  overflow: hidden;
+  width:calc(100% - 7%);
+  /* width:100%; */
+}
+.priceList::after{
+  content:"";
+  display:block;
+  position: absolute;
+  height:150px;
+  width:calc(100% - 7px);
+  background: rgba(33,33,33,0.7);
+  z-index: -3;
+}.priceList::before{
+  content:"";
+  display:block;
+  position: absolute;
+  height:150px;
+  width:calc(100% - 7px);
+  transform: rotate(3deg);
+  background: rgba(33,33,33,0.3);
+  z-index: -1;
+}
+/* .priceList > .backgroun{
+
+  position:relative;
+  top: 200px;
+  transform: rotate(3deg);
+  width:110%;
+  height:180px;
+  background: rgba(25,25,25,0.3);
+  z-index: -1;
+  overflow: hidden;
+
+} */
+
+/* .priceList > .backgroun > .backgroun2{
+
+  position:relative;
+
+  transform: rotate(1.5deg);
+  width:110%;
+  height:170px;
+  background: rgba(25,25,25,0.4);
+  z-index: -2;
+  overflow: hidden;
+} */
+/* @media(max-width:500px){
+  .priceList > .backgroun{
+    top:150px;
+  }
+}
+@media(max-width:1700px){
+  .priceList > .backgroun{
+    top:210px;
+  }
+} */
+.priceList > a > h2{
+  color:#e3e365;
+  text-align: center;
+  margin: 1%;
+  text-shadow: 1px 1px black;
+  transition: all 1s ease-out;
+}
+.priceList > a{
+  text-decoration: none;
+  transition: all 1s ease-out;
+}
+.priceList > a > button{
+  /* width:232px; */
+  height:60px;
+  background: #0693e3;
+  color:white;
+  border-radius:17px;
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+  transition: all 1s ease-out;
+}
+.priceList > a > button:hover{
+  color:#767676;
+  transition: all 1s ease-out;
+}

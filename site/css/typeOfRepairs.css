@@ -1,0 +1,106 @@
+.block{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width:100%;
+  /* max-width: 1720px; */
+}
+@media(max-width:911px){
+  .block{
+    flex-wrap: wrap;
+
+  }
+}
+.cell > a{
+  width:100%;
+  max-width:397px;
+  height: 400px;
+  text-decoration: none;
+  color: black;
+  /* margin:3%; */
+}
+.block > .cell > a > picture > img{
+  width:100%;
+  max-width:397px;
+  height:300px;
+  border-radius: 7px;
+}
+.block > .cell > a > p{
+  text-align: center;
+  /* margin:1%; */
+  font-size: 19px;
+}
+.cell > a > h3{
+  text-align: center;
+  margin:3%;
+}
+.cell{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  max-width:397px;
+  height: 420px;
+  margin:3%;
+}
+.block > .cell > picture > img{
+  /* width:100%; */
+  /* max-width:397px; */
+  width:397px;
+  max-width:100%;
+  height:300px;
+  border-radius: 7px;
+}
+.block > .cell > p{
+  text-align: center;
+  margin:1%;
+  font-size: 19px;
+}
+.cell > h3{
+  text-align: center;
+  margin:3%;
+}
+div.block:nth-child(5) > .cell{
+  /* margin-bottom:3%; */
+  /* margin-top:0; */
+}
+
+.cell > button{
+  width:170px;
+  min-height:40px;
+  background: #0693e3;
+  color:#e3e365;
+  text-shadow: 1px 1px black;
+  border-radius: 7px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 3%;
+  transition: all 1s ease-out;
+}
+.cell > button:hover{
+  /* color:#0693e3; */
+  background: black;
+  transition: all 1s ease-out;
+}
+/* typesOfRepairs */
+main > section > a > button{
+  min-width: 270px;
+  width: 100%;
+  height: 43px;
+  background: #e6e63c;
+  font-size: 17px;
+  border-radius: 7px;
+  color: white;
+  text-shadow: black 1px 1px;
+  font-weight: bold;
+  transition: all 1s ease-out;
+}
+main > section a > button:hover{
+  transition: all 1s ease-out;
+color:#e3e365;
+background: black;
+}
+body > main > section > a > button{
+  max-width:330px;
+}

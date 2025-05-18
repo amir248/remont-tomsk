@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: *.css
+Allow: *.js
+Disallow: /200
+Disallow: /404
+Disallow: /site/php/form.php
+Host: https://remont-tomsk.ru/
+Sitemap: https://remont-tomsk.ru/sitemap.xml

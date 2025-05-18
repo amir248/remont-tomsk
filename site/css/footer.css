@@ -1,0 +1,62 @@
+*{
+  margin:0;
+  padding:0;
+}
+footer{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+  max-width:1920px;
+  background:#10292e;
+  color: white;
+  min-height:250px;
+  flex-wrap:wrap;
+}
+footer > div > a > img{
+  width:75px;
+}
+footer > div{
+  display:flex;
+  width:100%;
+  max-width:300px;
+  justify-content:space-around;
+  align-items:center;
+}
+.messages{
+  min-width:140px;
+  width:70px;
+
+}
+.messages > a > img{
+  width: 55px;
+}
+.contactUs{
+  color:white;
+  background:#4444448f;
+  font-size:20px;
+  border-radius:17px;
+  width:250px;
+  min-height:47px;
+  border:none;
+}
+.contactUs:hover{
+  color:lightyellow;
+  background:#4444449f;
+  font-size:20px;
+  border-radius:17px;
+  width:250px;
+  min-height:47px;
+  border:none;
+}
+footer > .contactUsF{
+  flex-wrap:wrap;
+}
+footer > .contactUsF > a{
+  color:white;
+  text-align:32px;
+  flex-wrap:wrap;
+}
+footer > .contactUsF > a:hover{
+  color:rgb(230,230,250);
+}

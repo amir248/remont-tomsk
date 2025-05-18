@@ -1,0 +1,166 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:rgb(250,250,250);
+    font-family: 'Roboto', sans-serif;
+    /* margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width: 1920px; */
+}
+main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* max-width:1300px; */
+  width:100%;
+  text-align: center;
+}
+
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  max-width: 1300px;
+  flex-direction: column;
+  text-align: left;
+}
+article > h1,h2,h3,h4,h5{
+  padding-top:15px;
+  margin:1%;
+  text-align: center;
+  padding-top: 17px;
+}
+article > p{
+  margin:1%;
+}
+article > h1{
+  margin-top:1%;
+  margin-bottom:1%;
+  text-align: center;
+}
+main > h1,h2,h3,h4,h5{
+  adding-top:15px;
+  margin:1%;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.texts > p{
+  width:calc(100% -1%);
+  max-width:1300px;
+  margin:1%;
+}
+
+.typesOfRepairs{
+  display:flex;
+  justify-content: center;
+  align-items:space-between;
+  width:100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  /* min-height: 500px; */
+}
+.typesOfRepairs > div > ul{
+  /* position:relative; */
+  /* top:0; */
+}
+.typesOfRepairs > div > img{
+  width:100%;
+  max-width: 300px;
+  height: 270px;
+  border-radius: 7px;
+}
+.typesOfRepairs > div{
+  margin:3%;
+  display:flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 7px;
+}
+.typesOfRepairs > div > p{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:3%;
+}
+.typesOfRepairs > div > span{
+  margin:auto;
+  margin-top:15px;
+  font-weight: bold;
+}
+
+.typesOfRepairs > div > a > button{
+  width:100%;
+  height:43px;
+  background:#e6e63c;
+  font-size:17px;
+  border-radius:7px;
+  color:white;
+  text-shadow:black 1px 1px;
+  font-weight: bold;
+}
+.typesOfRepairs > div > a > button:hover{
+  background: black;
+  color:#e6e63c;
+  border:#e6e63c solid 1px;
+}
+body > main > a > button{
+  text-align: center;
+  max-width: 300px;
+  min-width: 270px;
+  width: 100%;
+  height: 43px;
+  background: #e6e63c;
+  font-size: 17px;
+  border-radius: 7px;
+  color: white;
+  text-shadow: black 1px 1px;
+  font-weight: bold;
+  transition: all 1s ease-out;
+  margin-bottom:3%;
+}
+body > main > a > button:hover{
+  transition: all 1s ease-out;
+  color: #e3e365;
+  background: black;
+}
+section > h1{
+  margin:3%;
+  font-size:24px;
+}
+.typesOfRepairs > div > span{
+  text-align: center;
+  margin:3%;
+}
+.typesOfRepairs > div > p{
+  text-align: center;
+  margin:3%;
+}
+/* body > a > button{
+  text-align: center;
+  max-width: 300px;
+  min-width: 270px;
+  width: 100%;
+  height: 43px;
+  background: #e6e63c;
+  font-size: 17px;
+  border-radius: 7px;
+  color: white;
+  text-shadow: black 1px 1px;
+  font-weight: bold;
+  transition: all 1s ease-out;
+}
+body > a > button:hover{
+  transition: all 1s ease-out;
+  color: #e3e365;
+  background: black;
+} */
+section{
+  width:100%;
+  max-width: 1300px;
+
+}

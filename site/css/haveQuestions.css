@@ -1,0 +1,79 @@
+
+.reviews{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: url('/site/img/bg_footer.jpg');
+  background: url('/remont_tomsk/public_html/site/img/bg_footer.jpg');
+  position: relative;
+  /* width:110%; */
+  height:494px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+  /* z-index: 33; */
+  overflow: hidden;
+  margin-top:3%;
+  margin-bottom:3%;
+  width:100%;
+}
+.reviews::after{
+  content: "";
+  position: absolute;
+  transform: rotate(-2.5deg);
+  /* top: 0; */
+    /* left: 0; */
+    background-color: rgba(33,33,33,0.3);
+  width:100%;
+  height:455px;
+  width:110%;
+  overflow: hidden;
+}
+.reviews::before{
+  content: "";
+  transform: rotate(-1.5deg);
+  position: absolute;
+  background-color: rgba(33,33,33,0.7);
+  width:100%;
+  height:494px;
+  /* z-index: -1; */
+  width:110%;
+  overflow: hidden;
+}
+.reviews > h2{
+  z-index: 1;
+  /* width:100%; */
+}
+.reviews > p{
+  z-index: 1;
+  /* width:100%; */
+}
+.reviews > form{
+  width:100%;
+  display:flex;
+  height:270px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  overflow: hidden;
+}
+.reviews > form > input{
+  width:240px;
+  height:46px;
+  border-radius: 17px;
+  z-index: 1;
+}
+.reviews > form > button{
+  width:240px;
+  height:46px;
+  border-radius: 17px;
+  background: #0693e3;
+  color:white;
+  font-size:20px;
+}
+.reviews > form > button:hover{
+  color:#e3e365;
+  background: black;
+}

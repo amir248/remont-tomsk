@@ -1,0 +1,214 @@
+*{
+  margin:0;
+  border:0;
+}
+body{
+  background:#f3f3f3;
+  font-family: 'Roboto', sans-serif;
+}
+header{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  /* background: #443f3e; */
+  /* /remont_tomsk/public_html */
+  background: url('/remont_tomsk/public_html/site/img/backgroundHeader.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+.logo > div{
+  display:flex;
+  justify-content:space-between;
+  /* align-items: space-around; */
+}
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo > section{
+  width:100%;
+  max-width: 1920px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.about{
+  width:100%;
+  max-width:390px;
+  display:inline-block;
+}
+.about > ul{
+  margin-left:1%;
+
+}
+.about > ul > li{
+  display:inline-block;
+}
+.logo > div > div{
+  display:flex;
+  color:white;
+}
+.logo > div > div > img{
+  width:70px;
+}
+.logo > div > div > p{
+  font-size:22px;
+}
+.logo > div{
+  margin:2%;
+}
+.contactsHeader{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+  max-width: 700px;
+}
+.contactsHeader > img{
+  margin:1%;
+  width:70px;
+}
+.contactsHeader > a{
+  text-shadow: 1px 1px black;
+  font-size: 22px;
+}
+.contactsHeader > a{
+  margin:1%;
+  color:white;
+  text-shadow: black;
+}
+/* header > .logo > nav{
+
+  width:100%;
+  background: grey;
+  padding-top: 30px;
+  padding-bottom:30px;
+  display:flex;
+  justify-content: center;
+  align-items: space-between;
+} */
+.logo{
+  width:100%;
+  height:370px;
+}
+header > .logo > nav > ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  font-size: 20px;
+  /* max-width: 1920px; */
+}
+@media(max-width:700px){
+  .about > ul{
+    display:none;
+  }
+  .about{
+    width:1px;
+  }
+  .logo > div{
+    justify-content: center;
+  }
+  header > .logo > nav > ul{
+    display:none;
+  }
+ .h1Header > h1{
+    font-size: 27px;
+  }
+  .h1Header > p{
+     font-size: 22px;
+   }
+   .h1Header > p{
+     margin-bottom:3%;
+   }
+}
+@media(min-width:700px){
+
+}
+/* HEADERY NAV */
+header > .logo > nav > ul > li{
+  margin:1%;
+  display: inline-block;
+  color:#e3e365;
+  text-shadow: black 1px 1px;
+}
+header > section{
+  width:100%;
+  max-width:1300px;
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+}
+section > .h1Header{
+  max-width:500px;
+  width:100%;
+  /* height:45%; */
+  text-shadow: 1px 1px black;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.twoHeader{
+  max-width:1200px;
+  width:100%;
+  flex-wrap: wrap;
+}
+header > .twoHeader > ul > li{
+  display: inline-block;
+  margin:3%;
+  text-shadow: black 1px 1px;
+}
+.calcOrder > form{
+  width:330px;
+  height:358px;
+  background: rgba(33,33,33,0.4);
+  border-radius:35px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.calcOrder > form > input{
+  margin:2%;
+  width:270px;
+  height:47px;
+  border-radius:17px;
+  border: 1px black;
+}
+.calcOrder > form > button{
+  width:270px;
+  height:47px;
+  border-radius:17px;
+  border: 1px black;
+  background: #3a7fe5;
+  color:white;
+  font-size: 22px;
+}
+.calcOrder > form > div{
+  margin:7%;
+}
+.calcOrder > form > input[type=checkbox]{
+  width:15px;
+  height: 15px;
+}
+.calcOrder > form > input[placeholder]{
+  font-size: 20px;
+  border:1%;
+}
+.calOrder{
+  box-shadow: 0 0 25px 0 rgb(255 255 255 / 5%);
+  padding: 30px;
+  border-radius: 25px;
+  position: relative;
+  color: #ebebeb;
+  backdrop-filter: blur(8px);
+
+}
