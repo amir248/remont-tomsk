@@ -1,0 +1,16 @@
+ErrorDocument 404 https://remont-tomsk.ru/404/
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.remont-tomsk\.ru$ [NC]
+RewriteRule ^(.*)$ https://remont-tomsk.ru/$1 [R=302,L]
+
+#Redirect 302 /index.html /
+#RedirectMatch 302 (.*)\.html$ https://remont-tomsk.ru/
+
+DirectoryIndex index.html index.php index.htm index.shtml
+
+RewriteRule ^(.*)index\.html$ https://remont-tomsk.ru/$1 [R=302,L] 
+#RewriteRule ^(.*)index\.php$ https://remont-tomsk.ru/$1 [R=302,L]
+Redirect 302 /polit/ /uslugi/
+Redirect 302 /shop/ /uslugi/
