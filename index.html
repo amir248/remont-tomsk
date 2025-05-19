@@ -300,12 +300,14 @@
             <input id="textMessages" >
             <button type="submit">Отправить</button>
         </form>
+      
     <script>
   
         const form = document.querySelector('.form');
         const number = '+79528885656';
         function sendToWhatsapp(text, phone) {
-            let messages=document.querySelector("#textMessages").value;
+            let messages='Здравствуйте! Срочно нужен ремонт ...'
+            // let messages=document.querySelector("#textMessages").value;
         text = encodeURIComponent(text);
 
         let url = `https://wa.me/${number}?text=${messages}`;
