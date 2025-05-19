@@ -252,7 +252,34 @@
 
           </form>
         </div> -->
-        <form action="#" class="form" method="POST">
+        <style>
+          #messagesWhatsApp{
+            width:100%;
+            max-width:500px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+            flex-direction: column;
+            min-height:150px;
+          }
+          #messagesWhatsApp > input{
+            max-width:270px;
+            width:100%;
+            border-radius: 37px 37px  0 0;
+            min-height:40px;
+            text-align:center;
+          }
+          #messagesWhatsApp > button{
+            max-width:270px;
+            width:100%;
+            border-radius: 0 0 37px 37px;
+            min-height:40px;
+            background: #0693e3;
+            color: #e3e365;
+            font-size:20px;
+          }
+        </style>
+        <form id="messagesWhatsApp" action="#" class="form" method="POST">
             <input id="textMessages" type="text">
             <button type="submit">Отправить</button>
             </form>
