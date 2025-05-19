@@ -235,23 +235,30 @@
           <p>С гарантией на все работы</p>
         </div>
 
-        <div class="calcOrder">
-          <span id="messages"></span>
-          <form class="" action="https://remont-tomsk.ru/form.php" method="post" id="importantForm" name="formOk">
-            <h3>Рассчитать заказ</h3>
-            <input type="text" name="name" value="" placeholder="Имя" id="name">
-            <input type="text" name="tel" value="" placeholder="+7(__)__-__-__" id="tel">
-             <h3>Для отправки данных перетащите ползунок вправо</h3>
-                <div class="range_box">
-                    <input type="range" class="range" value="0" min="0" max="100" id="range">
-                </div>
-          <!--  <button type="submit" name="button" onclick="notRefresh()" id="notRef">Оставить заявку</button>-->
-            <div>
-              <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
-            </div>
+     <form action="#" class="form" method="POST">
+            <input id="textMessages" type="text">
+            <button type="submit">Отправить</button>
+            </form>
+    <script>
+        const form = document.querySelector('.form');
+        const number = '+79528885656';
+        function sendToWhatsapp(text, phone) {
+            let messages=document.querySelector("#textMessages").value;
+        text = encodeURIComponent(text);
 
-          </form>
-        </div>
+        let url = `https://wa.me/${number}?text=${messages}`;
+
+        window.open(url);
+        }
+
+        form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const text = e.currentTarget.querySelector('input').value;
+
+        sendToWhatsapp(text, number);
+        });
+    </script>
 
 
 
