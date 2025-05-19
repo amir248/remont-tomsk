@@ -260,19 +260,27 @@
             justify-content: space-around;
             align-items:center;
             flex-direction: column;
-            min-height:150px;
+            min-height:250px;
+            background-color: rgba(0, 0, 0, 0.477);
+            border-radius:37px;
+            border:3px solid #0693e3;
+          }
+          #messagesWhatsApp > h3{
+            font-size:30px;
+            text-shadow:black 3px 3px;
+            
           }
           #messagesWhatsApp > textarea{
             max-width:270px;
             width:100%;
-            border-radius: 37px 37px  0 0;
+            border-radius: 7px 7px 7px 7px;
             min-height:40px;
             text-align:center;
           }
           #messagesWhatsApp > button{
             max-width:270px;
             width:100%;
-            border-radius: 0 0 37px 37px;
+            border-radius: 7px 7px 7px 7px;
             min-height:40px;
             background: #0693e3;
             color: #e3e365;
@@ -287,6 +295,7 @@
           }
         </style>
         <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <h3>Отавить заявку: </h3>
             <textarea id="textMessages" type="text"></textarea>
             <button type="submit">Отправить</button>
             </form>
