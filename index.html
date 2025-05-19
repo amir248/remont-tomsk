@@ -270,7 +270,7 @@
             text-shadow:black 3px 3px;
             
           }
-          #messagesWhatsApp > textarea{
+          #messagesWhatsApp > input{
             max-width:270px;
             width:100%;
             border-radius: 7px 7px 7px 7px;
@@ -296,9 +296,9 @@
         </style>
         <form id="messagesWhatsApp" action="#" class="form" method="POST">
             <h3>Отавить заявку: </h3>
-            <textarea id="textMessages" type="text"></textarea>
+            <input id="textMessages" >
             <button type="submit">Отправить</button>
-            </form>
+        </form>
     <script>
         const form = document.querySelector('.form');
         const number = '+79528885656';
