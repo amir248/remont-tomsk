@@ -151,7 +151,7 @@ async function mainFunction(){
     await swiper();
     // await humanOrNot();
     // await enlargeGallary();
-    await whatsAppToMessages();
+    // await whatsAppToMessages();
     // await first();
     // await second();
 }
