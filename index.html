@@ -272,7 +272,7 @@
           }
           #messagesWhatsApp > input{
             /* max-width:270px; */
-            width:1%;
+            width:1px;
             border-radius: 7px 7px 7px 7px;
             min-height:40px;
             text-align:center;
@@ -297,7 +297,7 @@
         </style>
         <form id="messagesWhatsApp" action="#" class="form" method="POST">
             <h3>Отавить заявку: </h3>
-            <input id="textMessages" >
+            <!-- <input id="textMessages" > -->
             <button type="submit">Отправить</button>
         </form>
       
@@ -305,10 +305,10 @@
   
         const form = document.querySelector('.form');
         const number = '+79528885656';
-        function sendToWhatsapp(text, phone) {
+        function sendToWhatsapp( phone) {
             let messages='Здравствуйте! Срочно нужен ремонт ...'
             // let messages=document.querySelector("#textMessages").value;
-        text = encodeURIComponent(text);
+        // text = encodeURIComponent(text);
 
         let url = `https://wa.me/${number}?text=${messages}`;
 
@@ -318,9 +318,9 @@
         form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const text = e.currentTarget.querySelector('input').value;
+        // const text = e.currentTarget.querySelector('input').value;
 
-        sendToWhatsapp(text, number);
+        sendToWhatsapp( number);
         });
     </script>
 
