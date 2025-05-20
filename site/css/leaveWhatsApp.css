@@ -1,0 +1,41 @@
+ #messagesWhatsApp{
+    width:100%;
+    max-width:430px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    min-height:230px;
+    background-color: rgba(0, 0, 0, 0.277);
+    border-radius:37px;
+    /* border:3px solid rgba(0,0,0,0.278); */
+    }
+    #messagesWhatsApp > h3{
+    font-size:30px;
+    text-shadow:black 3px 3px;
+    
+    }
+    #messagesWhatsApp > input{
+    /* max-width:270px; */
+    width:1px;
+    border-radius: 7px 7px 7px 7px;
+    min-height:40px;
+    text-align:center;
+    background: transparent;
+    }
+    #messagesWhatsApp > button{
+    max-width:270px;
+    width:100%;
+    border-radius: 7px 7px 7px 7px;
+    min-height:40px;
+    background: #0693e3;
+    color: #e3e365;
+    font-size:20px;
+    transition: all 1s ease-out;
+    text-shadow: 1px 1px black;
+    }
+    #messagesWhatsApp > button:hover {
+    color: #0693e3;
+    background: black;
+    transition: all 1s ease-out;
+    }

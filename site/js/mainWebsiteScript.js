@@ -138,7 +138,7 @@ function whatsAppToMessages(){
         setTimeout(()=>{
             resolve(goMeessages());
 
-        },777);
+        },1);
     });//whatsAppToMessages;
 }
 window.addEventListener('DOMContentLoaded',mainFunction);
@@ -151,7 +151,7 @@ async function mainFunction(){
     await swiper();
     // await humanOrNot();
     // await enlargeGallary();
-    // await whatsAppToMessages();
+    await whatsAppToMessages();
     // await first();
     // await second();
 }
