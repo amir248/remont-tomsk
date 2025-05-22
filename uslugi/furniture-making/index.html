@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="../../site/css/photoGallary.css">
     <link rel="stylesheet" href="../../site/css/humanOrNot.css">
+<link rel="stylesheet" href="../../site/css/leaveWhatsApp.css">
+
     <style media="screen">
 
       img{
@@ -325,22 +327,11 @@
           <h1>Изготовление корпусной мебели в Томске</h1>
           <p></p>
         </div>
-        <div class="calcOrder">
-          <span id="messages"></span>
-
-          <form class="" action="https://remont-tomsk.ru/site/php/form.php" method="post" id="importantForm" name="formOk">
-            <h3>Рассчитать заказ</h3>
-            <input type="text" name="name" value="" placeholder="Имя" id="name">
-            <input type="text" name="tel" value="" placeholder="+7(__)__-__-__" id="tel">
-             <h3>Для отправки данных перетащите ползунок вправо</h3>
-                <div class="range_box">
-                    <input type="range" class="range" value="0" min="0" max="100" id="range">
-                </div>
-            <div>
-              <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
-            </div>
-          </form>
-        </div>
+        <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <!-- <h3>авить заявку: </h3> -->
+            <!-- <input id="textMessages" > -->
+            <button type="submit">Отправить заявку</button>
+        </form>
       </section>
 
     </header>
@@ -515,9 +506,12 @@
           <p>Заказывайте мебель у профессионалов: -  это гарантия качества и долговечности. Обсуждайте все детали проекта: не стесняйтесь задавать вопросы и вносить свои предложения. Выбирайте качественные материалы и фурнитуру: это залог долгой службы мебели.</p>
           <p>Изготовление мебели - это  сложный процесс, требующий опыта, мастерства и любви к своему делу.  Правильный подход позволит создать мебель, которая будет радовать вас долгие годы.</p>
       </article>
-      <!-- <section class="additionalServicesOk" w3-include-html="../../site/includeHTML/additionalServicesOtherPages.html"></section> -->
-      <!-- <section w3-include-HTML="../../site/includeHTML/typesOfRepairs.html"></section> -->
-
+     <h2>Фотографии наших выполненных работ:</h2>
+        <section w3-include-html="../../site/includeHTML/portfolioGallaryFurnitureMaking.html"></section>
+        <span style="margin:1%"></span>
+ <a href="https://wa.me/79528808007">
+          <button type="button" name="button">Оставить заявку</button>
+        </a>
         <h2>Предвари<wbr>тельный расчет. Узнай стоимость ремонта своей квартиры и получи скидку на материалы.</h2>
         <section w3-include-html="../../site/includeHTML/calc.html"></section>
             <!-- <section w3-include-html="../site/includeHTML/additionalServicesOtherPages.html"></section> -->
@@ -526,8 +520,7 @@
         <section w3-include-html="../../site/includeHTML/freeMeasurement.html"></section>
         <section w3-include-html="../../site/includeHTML/aboutUs.html" id="aboutUs"></section>
 
-        <h2>Фотографии наших выполненных работ:</h2>
-        <section w3-include-html="../../site/includeHTML/portfolioGallaryFurnitureMaking.html"></section>
+        
 
         <section w3-include-html="../../site/includeHTML/reviews.html"></section>
         <div w3-include-html="../../site/includeHTML/priceList.html"></div>
@@ -540,14 +533,6 @@
 
     <footer w3-include-html="../../site/includeHTML/footer.html"></footer>
     </body>
-    <script defer type="text/javascript" src="../../site/js/includeHTML.js"></script>
-    <script defer type="text/javascript" src="../../site/js/modalWindow.js"></script>
-    <script defer type="text/javascript" src="../../site/js/humanOrNot.js"></script>
-
-    <script defer type="text/javascript" src="../../site/js/calculator.js"></script>
-    <!-- I'm don't know, what is't is that! -->
-    <!-- <script type="text/javascript" src="../site/js/getForm.js"></script> -->
-    <script defer type="text/javascript" src="../../site/js/menuWithDropDownList.js"></script>
-    <script type="text/javascript" src="../../site/js/toTheTop.js"></script>
-    <script defer type="text/javascript" src="../../site/js/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="../../site/js/mainWebsiteScript.js"></script>
+    
 </html>

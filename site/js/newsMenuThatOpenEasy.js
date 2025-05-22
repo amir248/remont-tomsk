@@ -7,7 +7,7 @@ const stateUsing={
     stateUsing.countClick+0;
     // let promise=new Promise((resolve, reject)=>{
       if(window.innerWidth>700){
-        console.log(window.innerWidth+"__"+window.innerHeight+ "__"+window.scrollY);
+        // console.log(window.innerWidth+"__"+window.innerHeight+ "__"+window.scrollY);
       }else{
         // console.log(window.innerWidth + " < 700px");
         let menuList=document.querySelector('.logo > nav');
@@ -156,8 +156,8 @@ const stateUsing={
           document.querySelector('.logo > nav > span:nth-child(1)').style.cssText=`
           transform: rotate(35deg);
           transition: all 1s ease-out;
-          margin-top: 0;
-          margin-bottom: 0;
+          margin-top: 3px;
+          margin-bottom: 3px;
           `;
           document.querySelector('.logo > nav > span:nth-child(2)').style.cssText=`
           display:none;
@@ -166,8 +166,8 @@ const stateUsing={
           document.querySelector('.logo > nav > span:nth-child(3)').style.cssText=`
           transform: rotate(-35deg);
           transition: all 1s ease-out;
-          margin-bottom: 0;
-          margin-top: 0;
+          margin-bottom: 3px;
+          margin-top: 3px;
           `;
           document.querySelector('.logo > nav').style.cssText=`
           height: 35px;

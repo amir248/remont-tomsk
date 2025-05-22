@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="../../site/css/photoGallary.css">
     <link rel="stylesheet" href="../../site/css/humanOrNot.css">
+     <link rel="stylesheet" href="../../site/css/leaveWhatsApp.css">
     <style media="screen">
 
       img{
@@ -121,7 +122,7 @@
      "url" : "https://wa.me/79528808007"
    },
    "datePublished": "2024-05-17:17:35:37 GMT+0700",
-   "dateModified": "2024-05-20:12:24:57 GMT+0700",
+   "dateModified": "2025-05-20:12:24:57 GMT+0700",
    "image": "https://remont-tomsk.ru/site/img/electricity/IMG_4376.PNG",
    "articleSection": "Ремонт квартир и домов",
    "articleBody": "Аурум Строй – надежный партнер в сфере электромонтажных работ в Томске. Мы предлагаем полный спектр услуг, начиная от проектирования и заканчивая монтажом и пусконаладкой электрооборудования.",
@@ -267,22 +268,11 @@
           <h1>Электромонтажные работы в Томске</h1>
           <!-- <p>С гарантией на все работы</p> -->
         </div>
-        <div class="calcOrder">
-          <span id="messages"></span>
-
-          <form class="" action="https://remont-tomsk.ru/site/php/form.php" method="post" id="importantForm" name="formOk">
-            <h3>Рассчитать заказ</h3>
-            <input type="text" name="name" value="" placeholder="Имя" id="name">
-            <input type="text" name="tel" value="" placeholder="+7(__)__-__-__" id="tel">
-             <h3>Для отправки данных перетащите ползунок вправо</h3>
-                <div class="range_box">
-                    <input type="range" class="range" value="0" min="0" max="100" id="range">
-                </div>
-            <div>
-              <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
-            </div>
-          </form>
-        </div>
+       <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <!-- <h3>авить заявку: </h3> -->
+            <!-- <input id="textMessages" > -->
+            <button type="submit">Отправить заявку</button>
+        </form>
       </section>
 
     </header>
@@ -320,8 +310,12 @@
 
         <p>Доверьте электромонтажные работы профессионалам!</p>
       </article>
-      <!-- <section class="additionalServicesOk" w3-include-html="../../site/includeHTML/additionalServicesOtherPages.html"></section> -->
-      <!-- <section w3-include-HTML="../../site/includeHTML/typesOfRepairs.html"></section> -->
+     <h2>Фотографии наших выполненных работ:</h2>
+        <section w3-include-html="../../site/includeHTML/portfolioGallaryElectricInstallationWork.html"></section>
+        <span style="margin:1%"></span>
+        <a href="https://wa.me/79528808007">
+          <button type="button" name="button">Оставить заявку</button>
+        </a>
 
         <h2>Предвари<wbr>тельный расчет. Узнай стоимость ремонта своей квартиры и получи скидку на материалы.</h2>
         <section w3-include-html="../../site/includeHTML/calc.html"></section>
@@ -331,8 +325,7 @@
         <section w3-include-html="../../site/includeHTML/freeMeasurement.html"></section>
         <section w3-include-html="../../site/includeHTML/aboutUs.html" id="aboutUs"></section>
 
-        <h2>Фотографии наших выполненных работ:</h2>
-        <section w3-include-html="../../site/includeHTML/portfolioGallaryElectricInstallationWork.html"></section>
+        
 
         <section w3-include-html="../../site/includeHTML/reviews.html"></section>
         <div w3-include-html="../../site/includeHTML/priceList.html"></div>
@@ -345,14 +338,5 @@
 
     <footer w3-include-html="../../site/includeHTML/footer.html"></footer>
     </body>
-    <script defer type="text/javascript" src="../../site/js/includeHTML.js"></script>
-    <script type="text/javascript" src="../../site/js/modalWindow.js"></script>
-
-    <script defer type="text/javascript" src="../../site/js/calculator.js"></script>
-    <!-- I'm don't know, what is't is that! -->
-    <!-- <script type="text/javascript" src="../site/js/getForm.js"></script> -->
-    <script defer type="text/javascript" src="../../site/js/menuWithDropDownList.js"></script>
-    <script type="text/javascript" src="../../site/js/toTheTop.js"></script>
-    <script defer type="text/javascript" src="../../site/js/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="../../site/js/humanOrNot.js"></script>
-</html>
+    <script defer type="text/javascript" src="../../site/js/mainWebsiteScript.js"></script>
+   </html>

@@ -9,26 +9,26 @@ setTimeout(()=>{
       }
       let x=+0;
       if(getValue=='value1'){
-        console.log(getValue + square);
+        // console.log(getValue + square);
         x =1500;
         document.querySelector('#priceCalc').value=`${oK(x)}`;
       }else if(getValue=='value2'){
-        console.log(getValue );
+        // console.log(getValue );
         x =2000;
         document.querySelector('#priceCalc').value=`${oK(x)}`;
 
       }else if(getValue=='value3'){
-        console.log(getValue );
+        // console.log(getValue );
         x =2500;
         document.querySelector('#priceCalc').value=`${oK(x)}`;
 
       }else if(getValue=='value4'){
-        console.log(getValue );
+        // console.log(getValue );
         x =5000;
         document.querySelector('#priceCalc').value=`${oK(x)}`;
 
       }else{
-        console.log('notGEtValue');
+        // console.log('notGEtValue');
       }
     }
 
@@ -38,7 +38,7 @@ setTimeout(()=>{
     // change square
     let squareChange=document.getElementById("squares");
     squareChange.addEventListener('change',()=>{
-      console.log(document.querySelector("#squares").value);
+      // console.log(document.querySelector("#squares").value);
       returnPrice();
     });
   },3400);

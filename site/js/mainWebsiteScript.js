@@ -118,13 +118,15 @@ function enlargeGallary(){
 };//enlargeGallary
 function whatsAppToMessages(){
     return new Promise((resolve)=>{
+        // That article was here https://verstaem.online/blog/otpravka-soobshheniya-s-sajta-v-whatsapp/
         function goMeessages(){
             const form = document.querySelector('.form');
             const number = '+79528808007';
             // const number = '+79528885656';
             function sendToWhatsapp( phone) {
-                let messages='Здравствуйте! Срочно нужен ремонт ...'
+                let messages='Здравствуйте! Нам нужен ремонт ...'
                 // let messages=document.querySelector("#textMessages").value;
+
             // text = encodeURIComponent(text);
             let url = `https://wa.me/${number}?text=${messages}`;
             window.open(url);
@@ -136,22 +138,25 @@ function whatsAppToMessages(){
             });
         }
         setTimeout(()=>{
+            window.onload = ()=>{
+                document.querySelector('#messagesWhatsApp > button:nth-child(1)').removeAttribute("disabled");
+            }
             resolve(goMeessages());
 
         },1);
-    });//whatsAppToMessages;
-}
+    })
+};//whatsAppToMessages;
 window.addEventListener('DOMContentLoaded',mainFunction);
 async function mainFunction(){
     await includeHtml();
-    await modalWindow();
-    await calc();
     await dropDownList();
-    await buttonToGoToTheTop();
+    await whatsAppToMessages();
+    await calc();
     await swiper();
     // await humanOrNot();
     // await enlargeGallary();
-    await whatsAppToMessages();
+    await modalWindow();
+    await buttonToGoToTheTop();
     // await first();
     // await second();
 }

@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="../../site/css/photoGallary.css">
     <link rel="stylesheet" href="../../site/css/humanOrNot.css">
+    <link rel="stylesheet" href="../../site/css/leaveWhatsApp.css">
+
     <style media="screen">
 
       img{
@@ -175,7 +177,7 @@
       "name": "Аурум Строй"
     },
     "datePublished": "2024-05-17:17:35:37 GMT+0700",
-    "dateModified": "2024-06-06:08:37:19 GMT+0700",
+    "dateModified": "2025-05-20:08:57:19 GMT+0700",
     "image": "https://remont-tomsk.ru/site/img/stretchCeiling/decorative-plater/IMG_4368.PNG",
     "articleSection": "Ремонт квартир и домов",
     "articleBody": "Декоративная штукатурка - отличный способ придать интерьеру индивидуальность и неповторимый стиль. Это не просто покрытие, а настоящее искусство, способное имитировать различные фактуры и создавать удивительные визуальные эффекты.",
@@ -322,7 +324,7 @@
         <h1>Декоративная штукатурка в Томске</h1>
         <!-- <p>С гарантией на все работы</p> -->
       </div>
-      <div class="calcOrder">
+      <!-- <div class="calcOrder">
         <span id="messages"></span>
 
         <form class="" action="https://remont-tomsk.ru/site/php/form.php" method="post" id="importantForm" name="formOk">
@@ -337,7 +339,12 @@
             <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
           </div>
         </form>
-      </div>
+      </div> -->
+      <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <!-- <h3>авить заявку: </h3> -->
+            <!-- <input id="textMessages" > -->
+            <button type="submit">Отправить заявку</button>
+        </form>
     </section>
 
   </header>
@@ -486,19 +493,21 @@
 <p>Дополнительные работы: выравнивание стен, грунтовка, подготовительные работы для декоративной штукатурки. Нанесение базового слоя: Для некоторых видов декоративной штукатурки требуется нанесение базового слоя, который обеспечит  равномерное распределение цвета и текстуры.</p>
 
       </article>
-      <!-- <section class="additionalServicesOk" w3-include-html="../../site/includeHTML/additionalServicesOtherPages.html"></section> -->
-      <!-- <section w3-include-HTML="../../site/includeHTML/typesOfRepairs.html"></section> -->
-
+        <h2>Фотографии наших работ:</h2>
+        <section w3-include-html="../../site/includeHTML/portfolioGallaryDecorativePlaster.html"></section>
+        <span style="margin:1%;"></span>
+        <a href="https://wa.me/79528808007">
+          <button type="button" name="button">Оставить заявку</button>
+        </a>
         <h2>Предвари<wbr>тельный расчет. Узнай стоимость ремонта своей квартиры и получи скидку на материалы.</h2>
         <section w3-include-html="../../site/includeHTML/calc.html"></section>
-            <!-- <section w3-include-html="../site/includeHTML/additionalServicesOtherPages.html"></section> -->
+          
 
       <span style="margin:3%;"></span>
         <section w3-include-html="../../site/includeHTML/freeMeasurement.html"></section>
         <section w3-include-html="../../site/includeHTML/aboutUs.html" id="aboutUs"></section>
 
-        <h2>Фотографии наших работ:</h2>
-        <section w3-include-html="../../site/includeHTML/portfolioGallaryDecorativePlaster.html"></section>
+        
 
         <section w3-include-html="../../site/includeHTML/reviews.html"></section>
         <div w3-include-html="../../site/includeHTML/priceList.html"></div>
@@ -511,14 +520,5 @@
 
     <footer w3-include-html="../../site/includeHTML/footer.html"></footer>
     </body>
-    <script defer type="text/javascript" src="../../site/js/includeHTML.js"></script>
-
-    <script defer type="text/javascript" src="../../site/js/calculator.js"></script>
-    <!-- I'm don't know, what is't is that! -->
-    <!-- <script type="text/javascript" src="../site/js/getForm.js"></script> -->
-    <script defer type="text/javascript" src="../../site/js/humanOrNot.js"></script>
-    <script defer type="text/javascript" src="../../site/js/modalWindow.js"></script>
-    <script defer type="text/javascript" src="../../site/js/menuWithDropDownList.js"></script>
-    <script defer type="text/javascript" src="../../site/js/toTheTop.js"></script>
-    <script defer type="text/javascript" src="../../site/js/swiper-bundle.min.js"></script>
+   <script defer type="text/javascript" src="../../site/js/mainWebsiteScript.js"></script>
 </html>

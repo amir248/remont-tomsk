@@ -361,8 +361,8 @@ body > header > div > div > img{
      width: 47px;
      height:3px;
      background: black;
-     margin-top:1%;
-     margin-bottom:1%;
+     margin-top:3px;
+     margin-bottom:3px;
    }
    .logo > nav > span:nth-child(2){
      width:40px;

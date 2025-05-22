@@ -186,8 +186,8 @@ position:relative;
       `;
       document.querySelector('.logo > nav > span:nth-child(1)').style.cssText=`
       transform: rotate(0deg);
-      margin-bottom: 1%;
-      margin-top:1%;
+      margin-bottom: 3px;
+      margin-top:3px;
       transition: all 3s ease-out;
       `;
       document.querySelector('.logo > nav > span:nth-child(2)').style.cssText=`
@@ -197,8 +197,8 @@ position:relative;
       document.querySelector('.logo > nav > span:nth-child(3)').style.cssText=`
       transform: rotate(0deg);
       transition: all 1s ease-out;
-      margin-bottom: 3%;
-      margin-top: 1%;
+      margin-bottom: 7px;
+      margin-top: 3px;
       `;
       document.querySelector('.logo > nav').style.cssText=`
       height:37px;

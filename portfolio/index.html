@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../site/css/swiper-bundle.min.css">
     <link rel="icon" type="image/svg" href="../site/img/favicon.svg" />
     <link rel="stylesheet" href="../site/css/typeOfRepairs.css">
-
+    <link rel="stylesheet" href="../site/css/leaveWhatsApp.css">
     <style>
       body > h1{
         text-align: center;
@@ -186,7 +186,7 @@
           <h1>Портфолио ремонтных работ в Томске</h1>
           <!-- <p>С гарантией на все работы</p> -->
         </div>
-        <div class="calcOrder">
+        <!-- <div class="calcOrder">
           <span id="messages"></span>
 
           <form class="" action="https://remont-tomsk.ru/site/php/form.php" method="post" id="importantForm" name="formOk">
@@ -201,7 +201,12 @@
               <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
             </div>
           </form>
-        </div>
+        </div> -->
+        <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <!-- <h3>авить заявку: </h3> -->
+            <!-- <input id="textMessages" > -->
+            <button type="submit">Отправить заявку</button>
+        </form>
       </section>
 
     </header>
@@ -209,7 +214,10 @@
     <main>
       <h1>Портфолио:</h1>
       <section w3-include-html="../site/includeHTML/portfolioGallaryPortfolio.html"></section>
-
+       <span style="margin:1%"></span>
+        <a href="https://wa.me/79528808007">
+          <button type="button" name="button">Оставить заявку</button>
+        </a>
         <section>
           <div w3-include-html="../site/includeHTML/aboutUs.html"></div>
         </section>

@@ -22,6 +22,23 @@
     <link rel="icon" type="image/svg" href="../site/img/favicon.svg" />
     <link rel="stylesheet" href="../site/css/typeOfRepairs.css">
     <link rel="stylesheet" href="../site/css/photoGallary.css">
+<link rel="stylesheet" href="../site/css/leaveWhatsApp.css">
+
+    <style>
+      article > p{
+        margin:1%;
+      }
+      article > a{
+        font-weight: 500;
+        color:black;
+        text-decoration: none;
+        transition: all ease 1s;
+        font-size:20px;
+      }
+      article > a:hover{
+        color:#0693e3;
+      }
+    </style>
     <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
     <script type="application/ld+json">
     {
@@ -35,7 +52,7 @@
         "url": "https://t.me/+79528808007"
       },
       "datePublished": "2024-05-10:13:32:18 GMT+0700 ",
-      "dateModified": "2024-05-18:17:35:37 GMT+0700 ",
+      "dateModified": "2025-05-20:17:35:37 GMT+0700 ",
       "image": "https://remont-tomsk.ru/site/img/4photo/IMG_4175.webp",
       "articleSection": "Компания «Аурум Строй»: Ваш надежный партнер в ремонте ванной комнаты и санузла в Томске",
       "articleBody": "Ремонт ванной комнаты или санузла — один из самых важных этапов ремонта в квартире в силу своей сложности и стоимости. Ремонт в этих помещениях делается на годы вперед и требует особого подхода и внимания ко всем деталям. Необходимо учитывать каждую деталь, чтобы результат ремонта в ванной комнате был максимально комфортным и безопасным для Вас и Вашей семьи.",
@@ -84,49 +101,6 @@
     }
     </script>
 
-    <!-- <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@graph":[{"@type":"WebPage","@id":"https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/",
-      "url":"https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/",
-      "name":"Ремонт ванной комнаты и санузла - Аурум Строй - ремонт в Томске",
-      "isPartOf":{"@id":"https://remont-tomsk.ru/#website"},
-      "primaryImageOfPage":{
-        "@id":"https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/#primaryimage"
-      },
-      "image":{"@id":"https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/#primaryimage"},
-      "thumbnailUrl":"https://remont-tomsk.ru/wp-content/uploads/2024/03/01_remont_vannoj.jpg",
-      "datePublished":"2024-05-12T05:30:41+00:00",
-      "dateModified":"2024-05-30T01:21:14+00:00",
-      "description":"Отделка ванной комнаты под ключ, актуальные цены. Компания предоставляет профессиональные услуги по ремонту ванной комнаты и санузла в Томске",
-      "inLanguage":"ru-RU",
-      "potentialAction":[{
-        "@type":"ReadAction",
-        "target":[
-          "https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/"
-        ]
-        }]
-      },
-      {
-        "@type":"ImageObject","inLanguage":"ru-RU",
-        "@id":"https://remont-tomsk.ru/remont-vann-i-sanuzlov-2/",
-        "url":"https://gaa.iao.ru/remont_tomsk/public_html/site/img/viewPriceOfWork/design.jpg","contentUrl":"https://gaa.iao.ru/remont_tomsk/public_html/site/img/2photo/PHOTO-2024-04-29-00-06-49.jpg",
-        "width":1000,"height":637,
-        "caption":"Аурум Строй. Ремонт квартир и домов"
-      },
-      {
-        "@type":"WebSite","@id":"https://remont-tomsk.ru/","url":"https://remont-tomsk.ru/","name":"Аурум Строй - ремонт в Томске","description":"",
-        "potentialAction":[{
-          "@type":"SearchAction",
-          "target":{
-            "@type":"EntryPoint",
-            "urlTemplate":"https://remont-tomsk.ru/?s={search_term_string}"},
-            "query-input":"required name=search_term_string"
-          }],
-        "inLanguage":"ru-RU"
-      }
-    }
-    </script> -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKJ3GKFJN5"></script>
     <script>
@@ -234,7 +208,7 @@
              <h1>Ремонт ванной комнаты и санузла Томск</h1>
              <p>С гарантией на все работы</p>
            </div>
-           <div class="calcOrder">
+           <!-- <div class="calcOrder">
             <span id="messages"></span>
             <form class="" action="https://remont-tomsk.ru/site/php/form.php" method="post" id="importantForm" name="formOk">
               <h3>Рассчитать заказ</h3>
@@ -244,13 +218,18 @@
                   <div class="range_box">
                       <input type="range" class="range" value="0" min="0" max="100" id="range">
                   </div>
-            <!--  <button type="submit" name="button" onclick="notRefresh()" id="notRef">Оставить заявку</button>-->
+         
               <div>
                 <input type="checkbox" name="" value="" checked> <span>Соглашаюсь с политикой безопасности</span>
               </div>
 
             </form>
-          </div>
+          </div> -->
+           <form id="messagesWhatsApp" action="#" class="form" method="POST">
+            <!-- <h3>вить заявку: </h3> -->
+            <!-- <input id="textMessages" > -->
+              <button type="submit">Отправить заявку</button>
+          </form>
          </section>
 
        </header>
@@ -320,26 +299,16 @@
               <source srcset="../site/img/viewPriceOfWork/design-500.webp" media="(max-width: 700px)" />
               <source srcset="../site/img/viewPriceOfWork/design.webp" type="image/webp" />
               <img src="../site/img/viewPriceOfWork/design.jpg" alt="Ремонт ванных комнат и санузлов в Томске">
-            </picture><!-- <ul>
-              <li>Разводка труб водоснабжения</li>
-              <li>Демонтаж старой сантехники</li>
-              <li>Установка полотенцесушителя</li>
-              <li>Укладка кафельной плитки</li>
-              <li>Отделка пола</li>
-              <li>Отделка потолка</li>
-              <li>Установка сантехники</li>
-              <li>Подключение техники</li>
-              <li>Установка сантехники</li>
-              <li>Подключение техники</li>
-              <li>Установка сантехники</li>
-              <li>Подключение техники</li>
-            </ul> -->
+            </picture>
             <p>от 12 000 Р за М2</p>
             <!-- <a href="https://wa.me/79528808007">
               <button type="button" name="button">Записаться через WhatsApp</button>
             </a> -->
           </div>
         </div>
+
+        <section w3-include-html="../site/includeHTML/portfolioGallaryBathroom.html"></section>
+
         <a href="https://wa.me/79528808007">
           <button type="button" name="button">Оставить заявку</button>
         </a>
@@ -411,7 +380,7 @@
                 <img src="../site/img/4photo/IMG_4161.PNG" alt="about us">
               </picture>
             </div>
-            <section w3-include-html="../site/includeHTML/portfolioGallaryBathroom.html"></section>
+            
 
           <!-- <hr style="margin:7%;background:green;display:block;"> -->
           <!-- <div w3-include-html="../site/includeHTML/aboutUs.html"></div> -->
@@ -430,16 +399,7 @@
 
     </main>
 
-    <script defer type="text/javascript" src="../site/js/includeHTML.js"></script>
-    <!-- I'm don't know, what is't is that! -->
-    <script defer type="text/javascript" src="../site/js/calculator.js"></script>
-    <script defer type="text/javascript" src="../site/js/menuWithDropDownList.js"></script>
-    <!-- <script type="text/javascript" src="../site/js/getForm.js"></script> -->
-    <script type="text/javascript" src="../site/js/modalWindow.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
-    <script type="text/javascript" src="../site/js/toTheTop.js"></script>
-    <script defer type="text/javascript" src="../site/js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="../site/js/humanOrNot.js"></script>
-
+    <script defer type="text/javascript" src="../site/js/mainWebsiteScript.js"></script>
+   
   </body>
 </html>
